@@ -1,0 +1,19 @@
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@font-face {
+  font-family: "Blow Brush";
+  src: url("./src/assets/fonts/blowbrush.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Optimus Princeps";
+  src: url("./src/assets/fonts/optimus-princeps.ttf") format("truetype");
+}
