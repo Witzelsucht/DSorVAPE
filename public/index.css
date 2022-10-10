@@ -10,10 +10,10 @@ body,
 
 @font-face {
   font-family: "Blow Brush";
-  src: url("./src/assets/fonts/blowbrush.ttf") format("truetype");
+  src: url("fonts/blowbrush.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Optimus Princeps";
-  src: url("./src/assets/fonts/optimus-princeps.ttf") format("truetype");
+  src: url("fonts/optimus-princeps.ttf") format("truetype");
 }
