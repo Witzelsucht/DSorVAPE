@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.webp";
-import "./Splash.css";
+import "./Splash.scss";
 
 export default function Splash(props) {
   const start = () => {

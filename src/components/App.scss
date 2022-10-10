@@ -1,0 +1,66 @@
+.app {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle at top,
+    #000000 0%,
+    #aa5f0a 15%,
+    #000000 35%
+  );
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  .content {
+    height: 97%;
+  }
+  .footer {
+    color: #555;
+    height: 3%;
+    width: 100%;
+    text-align: center;
+    font-family: "Optimus Princeps";
+  }
+}
+
+.button {
+  font-family: "Anton";
+  cursor: pointer;
+  background: radial-gradient(circle, #000000 0%, #aa5f0a 25%, #000000 45%);
+  font-size: 50px;
+  user-select: none;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fc {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media (min-width: 675px) {
+  .app {
+    .content {
+      width: 600px;
+    }
+  }
+}
+
+@media (max-width: 674px) {
+  .app {
+    .content {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.game-button {
+  width: 50%;
+  height: 100%;
+}
+.button-disabled {
+  pointer-events: disabled;
+}
+
+.block-answer {
+  background: none !important;
+}
+
+.correct-answer {
+  background: radial-gradient(#00ff00 0%, black 35%);
+}
+
+.wrong-answer {
+  background: radial-gradient(#ff0000 0%, black 35%);
+}

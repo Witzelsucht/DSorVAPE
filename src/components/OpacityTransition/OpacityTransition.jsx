@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import "./OpacityTransition.css";
+import "./OpacityTransition.scss";
 
 export default function OpacityTransition(props) {
   const [idleVisible, setIdleVisible] = useState(true);
@@ -10,6 +10,9 @@ export default function OpacityTransition(props) {
   const speedUp = props.speedUp;
   useEffect(() => {
     if (props.children) {
+      if (props.onStartAnimation) {
+        props.onStartAnimation();
+      }
       setIdleAnimating(false);
       setTimeout(
         () => {
@@ -17,6 +20,9 @@ export default function OpacityTransition(props) {
           setTransitionToVisible(true);
           setTimeout(() => {
             setTransitionToAnimating(true);
+            if (props.onEndAnimation) {
+              props.onEndAnimation();
+            }
           }, 100);
         },
         speedUp ? 500 : 1000
@@ -29,6 +35,9 @@ export default function OpacityTransition(props) {
           setIdleVisible(true);
           setTimeout(() => {
             setIdleAnimating(true);
+            if (props.onEndAnimation) {
+              props.onEndAnimation();
+            }
           }, 100);
         },
         speedUp ? 250 : 1000
